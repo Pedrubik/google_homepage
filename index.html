@@ -27,6 +27,15 @@
         margin-left: auto;
         margin-right: auto;
     }
+    .navbar{
+        display: flex;
+        width: fit-content;
+        list-style-type: none;
+        margin-left: 80%;
+    }
+    .navbar-element{
+        margin: 5px;
+    }
 </Style>
 <html>
     <head>
@@ -38,12 +47,14 @@
 
         </header>
         <nav>
-            <div>
-                Gmail
-            </div>
-            <div>
-                Imágenes
-            </div>
+            <ul class="navbar">
+                <li class="navbar-element">
+                    <a href="https://mail.google.com/mail/&ogbl">Gmail</a>
+                </li>
+                <li class="navbar-element">
+                    <a href="https://www.google.com.pe/imghp?hl=es-419&ogbl">Imágenes</a> 
+                </li>
+            </ul>
         </nav>
         <main>
             <img class="logo-google" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo">
