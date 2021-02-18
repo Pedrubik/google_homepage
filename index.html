@@ -7,10 +7,25 @@
     }
     .searchbox{
         display: block;
+        width: 600px;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 10px;
-        margin-bottom: 10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .buttons{
+        width: max-content;
+        position: relative;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .container{
+        width: max-content;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
     }
 </Style>
 <html>
@@ -33,12 +48,14 @@
         <main>
             <img class="logo-google" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo">
             <input type="text" class="searchbox">
-            <button>
-                Buscar con Google
-            </button>
-            <button>
-                Me siento con suerte
-            </button>
+            <div class="container">
+                <button class="buttons">
+                    Buscar con Google
+                </button>
+                <button class="buttons">
+                    Me siento con suerte
+                </button>
+            </div>
             <p>Ofrecido por Google en: English Quechua</p>
         </main>
         <footer>
