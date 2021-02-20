@@ -1,105 +1,62 @@
 <!DOCTYPE html>
-<Style>
-    .logo-google{
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .searchbox{
-        display: block;
-        width: 600px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-    .buttons{
-        width: max-content;
-        position: relative;
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-    .container{
-        width: max-content;
-        text-align: center;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .navbar{
-        display: flex;
-        width: fit-content;
-        list-style-type: none;
-        margin-left: 80%;
-    }
-    .navbar-element{
-        margin: 5px;
-        height: 100%;
-        width: 100%;
-    }
-</Style>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Google</title>
-    </head>
-    <body>
-        <header>
-
-        </header>
-        <nav>
-            <ul class="navbar">
-                <li class="navbar-element">
-                    <a href="https://mail.google.com/mail/&ogbl">Gmail</a>
-                </li>
-                <li class="navbar-element">
-                    <a href="https://www.google.com.pe/imghp?hl=es-419&ogbl">Imágenes</a> 
-                </li>
-            </ul>
-        </nav>
-        <main>
-            <img class="logo-google" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo">
-            <input type="text" class="searchbox">
-            <div class="container">
-                <button class="buttons">
-                    Buscar con Google
-                </button>
-                <button class="buttons">
-                    Me siento con suerte
-                </button>
-            </div>
-            <div style="text-align: center;">
-                Ofrecido por Google en: <a href="https://www.google.com/setprefs?sig=0_HyPtU5Rh5YatHcrYserEIJ7k7H4%3D&hl=en&source=homepage&sa=X&ved=0ahUKEwiSsKSLy_TuAhUFwlkKHUxLAN0Q2ZgBCA0">English</a> <a href="https://www.google.com/setprefs?sig=0_HyPtU5Rh5YatHcrYserEIJ7k7H4%3D&hl=qu&source=homepage&sa=X&ved=0ahUKEwiSsKSLy_TuAhUFwlkKHUxLAN0Q2ZgBCA4">Quechua</a>
-            </div>
-        </main>
-        <footer style="display: flexbox; position: absolute;bottom: 80px;">
-            Perú
-        </footer>
-        <footer style="">
-            <div style="display: flex;justify-content: center;margin-left: auto;margin-right: auto; width: 100%;position: absolute;bottom: 0;">
-                <Div class="navbar-element">
-                    Sobre Google
-                </Div>
-                <Div class="navbar-element">
-                    Publicidad
-                </Div>
-                <Div class="navbar-element">
-                    Negocios
-                </Div>
-                <Div class="navbar-element">
-                    Como funciona la Búsqueda
-                </Div>
-                <Div class="navbar-element">
-                    Privacidad
-                </Div>
-                <div class="navbar-element">
-                    Condiciones
-                </div>
-                <div class="navbar-element">
-                    Preferencias
-                </div>
-            </div>
-        </footer>
-    </body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/style.css" />
+    <title>Google</title>
+  </head>
+  <body>
+    <div id="layout">
+      <div id="navbar">
+        <a href="#" id="gmail">Gmail</a>
+        <a href="#" id="imagenes">Imágenes</a>
+        <a href="#" id="menu"
+          ><img src="/images/menu.png" height="32px" alt="menu"
+        /></a>
+        <a href="#" id="profileimage"
+          ><img
+            src="/images/profileimage.jpg"
+            height="32px"
+            alt="Your image profile"
+            style="border-radius: 50%"
+        /></a>
+      </div>
+      <div id="main">
+        <div id="mainmain">
+          <a href="#" id="googlelogo"
+            ><img src="/images/googlelogo.png" alt="Google Logo"
+          /></a>
+          <input type="search" id="searchbox" />
+          <div id="buttons">
+            <button id="searchbt">Buscar con Google</button>
+            <button id="randombt">Voy a tener suerte</button>
+          </div>
+          <a href="#" id="txt1google"
+            >Estamos presentes en cualquier modalidad de aprendizaje</a
+          >
+          <p id="txt2google">
+            Ofrecido por Google en:
+            <a href="#" style="color: #1a0dab">English</a>
+            <a href="#" style="color: #1a0dab">Quechua</a>
+          </p>
+        </div>
+      </div>
+      <div id="footer">
+        <div id="footer1">
+          <a href="#" id="peru">Perú</a>
+        </div>
+        <div id="footer2">
+          <a href="#" id="sobregoogle">Sobre Google</a>
+          <a href="#" id="publi">Publicidad</a>
+          <a href="#" id="negocios">Negocios</a>
+          <a href="#" id="comofunciona">Como funciona la Búsqueda</a>
+          <a href="#" id="privacidad">Privacidad</a>
+          <a href="#" id="condiciones">Condiciones</a>
+          <a href="#" id="preferencias">Preferencias</a>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

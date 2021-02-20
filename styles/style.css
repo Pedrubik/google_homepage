@@ -1,0 +1,180 @@
+html {
+  height: 100%;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+}
+body {
+  height: 100%;
+}
+a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 13px;
+}
+#layout {
+  height: 100%;
+  display: grid;
+  grid-template-areas:
+    "navbar"
+    "main"
+    "footer";
+  grid-template-rows: 50px 1fr 100px;
+}
+#navbar {
+  grid-area: navbar;
+  display: grid;
+  grid-template-areas: ". gmail imagenes menu profileimage";
+  grid-template-columns: 1fr 60px 80px 60px 40px;
+}
+#gmail {
+  grid-area: gmail;
+  align-self: center;
+}
+#imagenes {
+  grid-area: imagenes;
+  align-self: center;
+}
+#menu {
+  grid-area: menu;
+  align-self: center;
+}
+#profileimage {
+  grid-area: profileimage;
+  align-self: center;
+}
+#main {
+  grid-area: main;
+  display: grid;
+  grid-template-areas: ". mainmain .";
+  grid-template-columns: 1fr 600px 1fr;
+}
+#mainmain {
+  grid-area: mainmain;
+  display: grid;
+  grid-template-areas:
+    "."
+    "googlelogo"
+    "searchbox"
+    "buttons"
+    "txt1google"
+    "txt2google"
+    ".";
+  grid-template-rows: 0.5fr 100px 100px 50px 50px 50px 1fr;
+}
+#googlelogo {
+  grid-area: googlelogo;
+  justify-self: center;
+  align-self: center;
+}
+#searchbox {
+  grid-area: searchbox;
+  justify-self: center;
+  align-self: center;
+  width: 550px;
+  height: 40px;
+  border-radius: 30px;
+  background: white;
+  border-width: 2px;
+  border-color: rgba(0, 0, 0, 0.096);
+  border-style: solid;
+  outline: none;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+#buttons {
+  grid-area: buttons;
+  justify-self: center;
+  align-self: center;
+  grid-template-areas: ". searchbt randombt .";
+  grid-template-columns: 100px 200px 200px 100px;
+}
+#searchbt {
+  grid-area: searchbt;
+  justify-self: center;
+  align-self: center;
+  width: 160px;
+  height: 35px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+#randombt {
+  grid-area: randombt;
+  justify-self: center;
+  align-self: center;
+  width: 160px;
+  height: 35px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+#txt1google {
+  grid-area: txt1google;
+  justify-self: center;
+  align-self: center;
+  color: #1a0dab;
+}
+#txt2google {
+  grid-area: txt2google;
+  justify-self: center;
+  align-self: center;
+}
+#footer {
+  grid-area: footer;
+  display: grid;
+  grid-template-areas:
+    "footer1"
+    "footer2";
+  grid-template-rows: 50px 50px;
+}
+#footer1 {
+  grid-area: footer1;
+  display: grid;
+  grid-template-areas: "peru .";
+  grid-template-columns: 100px 1fr;
+}
+#peru {
+  grid-area: peru;
+  align-self: center;
+  justify-self: start;
+  margin-left: 5px;
+}
+#footer2 {
+  grid-area: footer2;
+  display: grid;
+  grid-template-areas: "sobregoogle publi negocios comofunciona . privacidad condiciones preferencias";
+  grid-template-columns: 100px 100px 100px 200px 1fr 100px 100px 100px;
+}
+#sobregoogle {
+  grid-area: sobregoogle;
+  justify-self: center;
+  align-self: center;
+}
+#publi {
+  grid-area: publi;
+  justify-self: center;
+  align-self: center;
+}
+#negocios {
+  grid-area: negocios;
+  justify-self: center;
+  align-self: center;
+}
+#comofunciona {
+  grid-area: comofunciona;
+  justify-self: center;
+  align-self: center;
+}
+#privacidad {
+  grid-area: privacidad;
+  justify-self: center;
+  align-self: center;
+}
+#condiciones {
+  grid-area: condiciones;
+  justify-self: center;
+  align-self: center;
+}
+#preferencias {
+  grid-area: preferencias;
+  justify-self: center;
+  align-self: center;
+}
